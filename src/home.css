@@ -1,0 +1,100 @@
+body {
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.overall-cont{
+    background: url(./assets/hero-banner.jpg);
+}
+
+.container {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#top {
+    font-family: 'toucheBold', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+    color: #222;
+}
+
+#bottom {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+input[type='text'] {
+    width: 50%;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    outline: none;
+    font-size: 20px;
+    color: #222;
+    order: 1;
+    display: flex;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+    }
+
+    input[type='text'] {
+        width: 90%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #register {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+}
+
+/******************************************************************
+************************* Tablet view CSS *************************/
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    input[type='text'],
+    #register {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
+/******************************************************************
+************************* Laptop view CSS *************************/
+
+/* @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    
+} */
+
+@media screen and (min-width: 1440px)and (max-width: 2559px) {}
+
+@media screen and (min-width: 2560px) {
+
+    input[type='text'],
+    #register {
+        padding: 40px;
+        font-size: 2.5rem;
+    }
+}
