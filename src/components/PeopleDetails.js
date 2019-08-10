@@ -94,7 +94,7 @@ class PeopleDetails extends Component {
                 </Feed.Label>
                 <Feed.Content>
                   <Feed.Date content="Gender:" />
-                  <Feed.Summary>{this.state.content.gender}</Feed.Summary>
+                  <Feed.Summary>{this.state.content.gender === 'n/a'? this.state.content.gender = 'robot' : this.state.content.gender}</Feed.Summary>    {/*contaminant*/}
                 </Feed.Content>
               </Feed.Event>
               <Feed.Event>

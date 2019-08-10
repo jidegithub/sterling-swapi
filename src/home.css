@@ -5,14 +5,14 @@ body {
 }
 
 .overall-cont{
-    height: 100vh;
+    height: 80vh;
     background: url(./assets/hero-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .logo-box{
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 40px;
 }
 .logo{
@@ -22,14 +22,17 @@ body {
 .input-label{
     color: white;
     position: absolute;
-    bottom: 300px;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .directory{
     font-size: 30px;
     font-weight: 900;
 }
 hr{
-    width: 60%;
+    width: 50%;
 }
 
 .input-label-spec {
@@ -82,6 +85,54 @@ input[type='text'] {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.ui.inverted.menu {
+    display: inline-block;
+}
+
+.ui.dropdown{
+    background-color: wheat;
+}
+
+a.icon.item{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+div.ui.pointing.dropdown.link.item{
+    position: absolute;
+    left: 26%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.ui.input{
+     position: absolute;
+     top: 55%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-weight: 400;
+     font-style: normal;
+     /* display: flex; */
+     color: rgba(0, 0, 0, .87);
+     font-size: 1em;
+     width: 40%;
+}
+
+.ui.dropdown>.text {
+    padding: 17px;
+}
+
+.ui.dropdown>.dropdown.icon {
+    padding: 5px;
+}
+
+.rendered-card{
+    margin-top:15px;
+}
+    
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
     html,

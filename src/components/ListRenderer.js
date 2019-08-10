@@ -51,7 +51,8 @@ class ListRenderer extends Component {
   render() {
     return this.state.content ? (
       <>
-        <h2 style={{ color: 'white' }}>{this.props.name}</h2>
+      <div className="rendered-cards" style={{position:'absolute', top:'445px'}}>
+        <h2 style={{ color: '#1b1c1d' }}>{this.props.name}</h2>
         <Buttons
           prev={this.state.prev}
           next={this.state.next}
@@ -59,6 +60,7 @@ class ListRenderer extends Component {
           fnNext={this.handleNextButton}
         />
         <Card.Group>{this.state.content.map(this.props.renderCard)}</Card.Group>
+      </div>  
       </>
     ) : (
       <Spinner />

@@ -13,7 +13,7 @@ const People = () => (
           <Card.Header>{person.name}</Card.Header>
           <Card.Meta>Height: {person.height}</Card.Meta>
           <Card.Description>Birth: {person.birth_year}</Card.Description>
-          <Card.Description>Gender: {person.gender}</Card.Description>
+          <Card.Description>Gender: {person.gender === 'n/a'? person.gender = 'robot' : person.gender}</Card.Description>
         </Card.Content>
         <Card.Content extra>
           <div>

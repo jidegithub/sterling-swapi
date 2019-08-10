@@ -1,14 +1,23 @@
 import React from 'react';
 import '../home.css';
 import starlogo from '../assets/logo.png';
-import People from './People';
-import Planets from './Planets';
-import starships from './Starships';
-import Starships from './Starships';
+import Filter from './Filter';
 
 const Home = () => (
   <>
-    <div className="overall-cont">
+  <div className="logo-box">
+      <img src={starlogo} alt="logo" className="logo" /> 
+    </div>
+
+    <div className="input-label">
+      <div className = "borderBottom">
+        <img src={starlogo} alt="logo" className="logo" /> 
+        <span className="directory">Directory</span>
+      </div>
+      <hr/>
+      <p className="input-label-spec"> find your favourite characters, films, species, starships and planets </p>
+    </div>
+    {/* <div className="overall-cont">
         <div className="logo-box">
             <img src={starlogo} alt="logo" className="logo" /> 
         </div>
@@ -26,8 +35,8 @@ const Home = () => (
               <input name="email" type="text" className="input-box" placeholder="enter a search term" />
             </div>
           </form>
-    </div>
-    <div>
+    </div> */}
+    {/* <div>
       popular people
       <People />
     </div>
@@ -38,7 +47,7 @@ const Home = () => (
     <div>
       starships
       <Starships />
-    </div>
+    </div> */}
     
   </>
 );

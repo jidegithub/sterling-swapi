@@ -46,6 +46,7 @@ class App extends Component {
   render() {
     return (
       <>
+      <div className="overall-cont">
         <Router>
           <div>
             {/* <Menu inverted>
@@ -55,7 +56,12 @@ class App extends Component {
                 as={Link}
                 to="/"
               />
+              </Menu> */}
+
+
+            
               <Dropdown text="Explore" pointing className="link item">
+                
                 <Dropdown.Menu>
                   <Dropdown.Header>Categories</Dropdown.Header>
                   <Dropdown.Item as={Link} to="/starships">
@@ -69,10 +75,9 @@ class App extends Component {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <Menu.Menu position="right">
+              <Menu.Menu>
                 <Menu.Item>
                   <Input
-                    style={{ width: '100px' }}
                     placeholder="Search..."
                     value={this.state.value}
                     onChange={this.handleChange}
@@ -85,7 +90,10 @@ class App extends Component {
                   onClick={this.handleClick}
                 />
               </Menu.Menu>
-            </Menu> */}
+            
+
+
+
             <Switch>
               <Route exact path="/" component={Home} />
               <Redirect from="/star-wars-app" to="/" />
@@ -103,6 +111,7 @@ class App extends Component {
             </Switch>
           </div>
         </Router>
+        </div>
       </>
     );
   }
