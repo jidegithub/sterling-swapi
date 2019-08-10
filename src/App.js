@@ -47,8 +47,8 @@ class App extends Component {
     return (
       <>
         <Router>
-          <div style={{ margin: '10px' }}>
-            <Menu inverted>
+          <div>
+            {/* <Menu inverted>
               <MenuLink
                 activeOnlyWhenExact={true}
                 name="Home"
@@ -85,7 +85,7 @@ class App extends Component {
                   onClick={this.handleClick}
                 />
               </Menu.Menu>
-            </Menu>
+            </Menu> */}
             <Switch>
               <Route exact path="/" component={Home} />
               <Redirect from="/star-wars-app" to="/" />
