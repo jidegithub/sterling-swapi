@@ -46,22 +46,19 @@ class App extends Component {
   render() {
     return (
       <>
-      <div className="overall-cont">
-        <Router>
-          <div>
-            {/* <Menu inverted>
-              <MenuLink
-                activeOnlyWhenExact={true}
-                name="Home"
-                as={Link}
-                to="/"
-              />
-              </Menu> */}
+        <div className="overall-cont">
+          <Router>
+            <div>
+              <Menu inverted>
+                <MenuLink
+                  activeOnlyWhenExact={true}
+                  name="Home"
+                  as={Link}
+                  to="/"
+                />
+              </Menu>
 
-
-            
               <Dropdown text="Explore" pointing className="link item">
-                
                 <Dropdown.Menu>
                   <Dropdown.Header>Categories</Dropdown.Header>
                   <Dropdown.Item as={Link} to="/starships">
@@ -90,27 +87,27 @@ class App extends Component {
                   onClick={this.handleClick}
                 />
               </Menu.Menu>
-            
 
-
-
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Redirect from="/star-wars-app" to="/" />
-              <Route path="/starships" component={Starships} />
-              <Route path="/people" component={People} />
-              <Route path="/planets" component={Planet} />
-              <Route path="/search/:id?" component={Search} />
-              <Route path="/details/people/:id?" component={PeopleDetails} />
-              <Route path="/details/planets/:id?" component={PlanetsDetails} />
-              <Route
-                path="/details/starships/:id?"
-                component={StarshipsDetails}
-              />
-              <Route path="*" component={NotFound} />
-            </Switch>
-          </div>
-        </Router>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Redirect from="/star-wars-app" to="/" />
+                <Route path="/starships" component={Starships} />
+                <Route path="/people" component={People} />
+                <Route path="/planets" component={Planet} />
+                <Route path="/search/:id?" component={Search} />
+                <Route path="/details/people/:id?" component={PeopleDetails} />
+                <Route
+                  path="/details/planets/:id?"
+                  component={PlanetsDetails}
+                />
+                <Route
+                  path="/details/starships/:id?"
+                  component={StarshipsDetails}
+                />
+                <Route path="*" component={NotFound} />
+              </Switch>
+            </div>
+          </Router>
         </div>
       </>
     );

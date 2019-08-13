@@ -94,7 +94,12 @@ class PeopleDetails extends Component {
                 </Feed.Label>
                 <Feed.Content>
                   <Feed.Date content="Gender:" />
-                  <Feed.Summary>{this.state.content.gender === 'n/a'? this.state.content.gender = 'robot' : this.state.content.gender}</Feed.Summary>    {/*contaminant*/}
+                  <Feed.Summary>
+                    {this.state.content.gender === 'n/a'
+                      ? (this.state.content.gender = 'robot')
+                      : this.state.content.gender}
+                  </Feed.Summary>{' '}
+                  {/*contaminant*/}
                 </Feed.Content>
               </Feed.Event>
               <Feed.Event>
@@ -162,33 +167,6 @@ class PeopleDetails extends Component {
                         <ExtraCard link={el} key={i} />
                       ))}
                   </Feed.Summary>
-                </Feed.Content>
-              </Feed.Event>
-              <Feed.Event>
-                <Feed.Label>
-                  <Icon disabled name="external square alternate" />
-                </Feed.Label>
-                <Feed.Content>
-                  <Feed.Date content="Created:" />
-                  <Feed.Summary>{this.state.content.created}</Feed.Summary>
-                </Feed.Content>
-              </Feed.Event>
-              <Feed.Event>
-                <Feed.Label>
-                  <Icon disabled name="edit" />
-                </Feed.Label>
-                <Feed.Content>
-                  <Feed.Date content="Edited:" />
-                  <Feed.Summary>{this.state.content.edited}</Feed.Summary>
-                </Feed.Content>
-              </Feed.Event>
-              <Feed.Event>
-                <Feed.Label>
-                  <Icon disabled name="sync" />
-                </Feed.Label>
-                <Feed.Content>
-                  <Feed.Date content="URL:" />
-                  <Feed.Summary>{this.state.content.url}</Feed.Summary>
                 </Feed.Content>
               </Feed.Event>
             </Feed>

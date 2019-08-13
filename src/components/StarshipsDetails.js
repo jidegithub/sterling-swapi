@@ -197,24 +197,7 @@ class StarshipsDetails extends Component {
                 <Feed.Label>
                   <Icon disabled name="external square alternate" />
                 </Feed.Label>
-                <Feed.Content>
-                  <Feed.Date content="Created:" />
-                  <Feed.Summary>{this.state.content.created}</Feed.Summary>
-                </Feed.Content>
-              </Feed.Event>
-              <Feed.Event>
-                <Feed.Label>
-                  <Icon disabled name="edit" />
-                </Feed.Label>
-                <Feed.Content>
-                  <Feed.Date content="Edited:" />
-                  <Feed.Summary>{this.state.content.edited}</Feed.Summary>
-                </Feed.Content>
-              </Feed.Event>
-              <Feed.Event>
-                <Feed.Label>
-                  <Icon disabled name="sync" />
-                </Feed.Label>
+
                 <Feed.Content>
                   <Feed.Date content="URL:" />
                   <Feed.Summary>{this.state.content.url}</Feed.Summary>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Buttons from './Buttons';
 import Spinner from './spinner';
 import { Card } from 'semantic-ui-react';
+import Home from './Home';
 
 class ListRenderer extends Component {
   state = {
@@ -51,16 +52,21 @@ class ListRenderer extends Component {
   render() {
     return this.state.content ? (
       <>
-      <div className="rendered-cards" style={{position:'absolute', top:'445px'}}>
-        <h2 style={{ color: '#1b1c1d' }}>{this.props.name}</h2>
-        <Buttons
-          prev={this.state.prev}
-          next={this.state.next}
-          fnPrev={this.handlePrevButton}
-          fnNext={this.handleNextButton}
-        />
-        <Card.Group>{this.state.content.map(this.props.renderCard)}</Card.Group>
-      </div>  
+        <div
+          className="rendered-cards"
+          style={{ position: 'absolute', top: '500px' }}
+        >
+          <h2 style={{ color: '#1b1c1d' }}>{this.props.name}</h2>
+          <Buttons
+            prev={this.state.prev}
+            next={this.state.next}
+            fnPrev={this.handlePrevButton}
+            fnNext={this.handleNextButton}
+          />
+          <Card.Group>
+            {this.state.content.map(this.props.renderCard)}
+          </Card.Group>
+        </div>
       </>
     ) : (
       <Spinner />

@@ -1,0 +1,183 @@
+body {
+  background-color: #fff;
+  max-width: 100%;
+  position: relative;
+}
+
+.overall-cont {
+  height: 80vh;
+  background: url(./assets/hero-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 110px;
+  &-box {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+  }
+}
+
+.input-label {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &-spec {
+    font-size: 25px;
+    width: 500px;
+  }
+}
+.directory {
+  font-size: 30px;
+  font-weight: 900;
+}
+hr {
+  width: 50%;
+}
+
+.container {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+}
+.input-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#top {
+  font-family: 'toucheBold', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
+  margin-top: 20%;
+  color: #222;
+}
+
+#bottom {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+input[type='text'] {
+  width: 60%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  outline: none;
+  font-size: 20px;
+  color: #222;
+  order: 1;
+  text-indent: 85px;
+  display: flex;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ui.inverted.menu {
+  display: inline-block;
+}
+
+.ui.dropdown {
+  background-color: wheat;
+}
+
+a.icon.item {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+div.ui.pointing.dropdown.link.item {
+  position: absolute;
+  left: 26%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ui.input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-style: normal;
+  /* display: flex; */
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1em;
+  width: 40%;
+}
+
+.ui.dropdown > .text {
+  padding: 17px;
+}
+
+.ui.dropdown > .dropdown.icon {
+  padding: 5px;
+}
+
+.rendered-card {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+  }
+
+  input[type='text'] {
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  #register {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+}
+
+/******************************************************************
+************************* Tablet view CSS *************************/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  input[type='text'],
+  #register {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
+
+/******************************************************************
+************************* Laptop view CSS *************************/
+
+/* @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    
+} */
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+}
+
+@media screen and (min-width: 2560px) {
+  input[type='text'],
+  #register {
+    padding: 40px;
+    font-size: 2.5rem;
+  }
+}
