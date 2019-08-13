@@ -75,6 +75,7 @@ class App extends Component {
               <Menu.Menu>
                 <Menu.Item>
                   <Input
+                    className="input-search"
                     placeholder="Search..."
                     value={this.state.value}
                     onChange={this.handleChange}

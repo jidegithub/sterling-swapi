@@ -108,76 +108,94 @@ div.ui.pointing.dropdown.link.item {
   transform: translate(-50%, -50%);
 }
 
-.ui.input {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 400;
-  font-style: normal;
-  /* display: flex; */
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 1em;
-  width: 40%;
-}
-
-.ui.dropdown > .text {
-  padding: 17px;
-}
-
-.ui.dropdown > .dropdown.icon {
-  padding: 5px;
+.ui {
+  &.input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-style: normal;
+    /* display: flex; */
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1em;
+    width: 40%;
+  }
+  &.dropdown > .text {
+    padding: 17px;
+  }
+  &.dropdown > .dropdown.icon {
+    padding: 5px;
+  }
 }
 
 .rendered-card {
   margin-top: 15px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+// @media screen and (max-width:320px){
+//     div.ui.pointing.dropdown.link.item {
+//         position: absolute;
+//         left: 50%!important;
+//         top: 62%;
+//         transform: translate(-50%, -50%);
+//     }
+// }
+
+@media screen and (max-width: 500px) {
+  .overall-cont {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
   html,
   body {
     width: 100%;
   }
-
-  input[type='text'] {
-    width: 90%;
-    padding: 15px;
-    font-size: 16px;
-  }
-
-  #register {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    margin-top: 5%;
+  .logo-box {
+    display: none;
   }
 }
 
-/******************************************************************
-************************* Tablet view CSS *************************/
+@media screen and (max-width: 1031px) {
+  .ui {
+    &.input {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  input[type='text'],
-  #register {
-    padding: 20px;
-    font-size: 1rem;
+  a.icon.item {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+
+  div.ui.pointing.dropdown.link.item {
+    position: absolute;
+    left: 24.7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .link-item {
+  }
+
+  .input-label-spec {
+    width: 300px;
+    font-size: 17px;
   }
 }
 
-/******************************************************************
-************************* Laptop view CSS *************************/
-
-/* @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    
-} */
-
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-}
-
-@media screen and (min-width: 2560px) {
-  input[type='text'],
-  #register {
-    padding: 40px;
-    font-size: 2.5rem;
+@media screen and (max-width: 1320px) {
+  div.ui.pointing.dropdown.link.item {
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
   }
 }
