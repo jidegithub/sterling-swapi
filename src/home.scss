@@ -71,7 +71,7 @@ hr {
 }
 
 input[type='text'] {
-  width: 60%;
+  width: 80%;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -119,7 +119,7 @@ div.ui.pointing.dropdown.link.item {
     /* display: flex; */
     color: rgba(0, 0, 0, 0.87);
     font-size: 1em;
-    width: 40%;
+    width: 80%;
   }
   &.dropdown > .text {
     padding: 17px;
@@ -145,6 +145,14 @@ div.ui.pointing.dropdown.link.item {
 @media screen and (max-width: 500px) {
   .overall-cont {
     width: 100vw;
+  }
+  .ui.input {
+    width: 80%;
+  }
+  a.icon.item {
+    position: absolute;
+    top: 50%;
+    left: 80% !important;
   }
 }
 
