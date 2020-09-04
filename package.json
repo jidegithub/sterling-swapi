@@ -5,7 +5,7 @@
   "dependencies": {
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.15.3",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
